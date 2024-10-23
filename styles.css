@@ -1,0 +1,60 @@
+.custom-paragraph {
+    font-size: 1rem; /* Tamaño de fuente estándar */
+    line-height: 1.5; 
+}
+/* Justificar texto en las columnas */
+.text-column {
+    text-align: justify; /* Justifica el texto */
+    margin-bottom: 15px; /* Espacio entre párrafos */
+    line-height: 1.5; /* Mejora la legibilidad */
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.col-lg-3 {
+    flex: 0 0 250px; 
+    margin-right: 20px; 
+}
+.col-lg-9 {
+    flex: 1; 
+}
+#col-lg-9 col-md-8 col-sm-12 {
+    text-align: center; 
+    margin-top: 100px; 
+}
+#titulo {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: -200px;
+}
+#textCarousel {
+    text-align: center;
+    margin-top: -8px;
+    margin-left: -200px;
+}
+.text-column {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.list-group{
+    margin-top: 185px;
+    .list-group-item {
+        font-size: 1.25rem; /* fuente */
+    }
+}
+.list-group-item {
+    font-size: 1.25rem; /* txt mas grande */
+    padding: 1rem 1.5rem; 
+}
+
+
+/* para pantalla chicas */
+@media (max-width: 768px) {
+    .col-lg-3, .col-lg-9 {
+        flex: 0 0 100%; 
+        margin-right: 0;
+    } 
+}
